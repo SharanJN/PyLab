@@ -1,6 +1,6 @@
 # Aim: Demonstartion of manipulation of strings using string methods
 
-#Write a python program that accepts a sentence and find the number of words, digits, uppercase letters and lowercase letters.
+"""Write a python program that accepts a sentence and find the number of words, digits, uppercase letters and lowercase letters."""
 
 sentence = input('Enter a sentence:')
 

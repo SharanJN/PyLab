@@ -1,6 +1,4 @@
-# Aim: Demonstartion of manipulation of strings using string methods
-
-# Write a python program to find the similarity between two given strings
+"""Write a python program to find the similarity between two given strings"""
 
 str1 = input('Enter string 1 \n')
 str2 = input('Enter string 2 \n')
