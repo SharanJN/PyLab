@@ -1,5 +1,5 @@
 import re
-def isphonenumber(numStr):
+def ifphonenumber(numStr):
     if len(numStr) != 12:
         return False
     for i in range(len(numStr)):
@@ -9,25 +9,25 @@ def isphonenumber(numStr):
         else:
             if numStr[i].isdigit() == False:
                 return False
-        return True
+    return True
+
 def chkphonenumber(numStr):
     ph_no_pattern = re.compile(r'^\d{3}-\d{3}-\d{4}$')
     if ph_no_pattern.match(numStr):
         return True
     else:
-         return False
-     
-ph_num = input("Enter a phone number : ")
-print("Without using Regular Expression")
-if isphonenumber(ph_num):
-    print("Valid phone number")
-else:
-    print("Invalid phone number")
+        return False
     
-    
-print("Using Regular Expression")
-if chkphonenumber(ph_num):
-    print("Valid phone number")
-else:
-    print("Invalid phone number")
+ph_num = input('Enter a phone number: ')
+print('Using regular expression: ')
 
+if chkphonenumber(ph_num):
+    print('Valid Phone Number. ')
+else:
+    print('Invalid Phone Number. ')
+
+print('Without using regular expression')
+if ifphonenumber(ph_num):
+    print('Valid Phone Number. ')
+else:
+    print('Invalid Phone Number. ')
